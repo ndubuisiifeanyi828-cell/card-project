@@ -1,27 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
 import "./CardNav.css";
 
 const CardNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="navbar">
-      <div className="logo">BiteCraft Kitchen</div>
-
-      <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-
-      <div
-        className="hamburger"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="logo">
+        <RestaurantIcon style={{ fontSize: "28px" }} />
+        <span>BiteCraft Kitchen</span>
       </div>
     </nav>
   );

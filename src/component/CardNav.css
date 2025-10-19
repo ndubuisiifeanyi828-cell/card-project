@@ -1,74 +1,30 @@
-/* Navbar Container */
 .navbar {
+  width: 100%;
+  background-color: #050505; /* warm food color */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #000000;
-  padding: 15px 25px;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  gap: 10px;
+  letter-spacing: 1px;
 }
 
-/* Logo */
-.logo {
-  font-size: 1.4rem;
-  font-weight: bold;
+.logo span {
+  font-family: "Poppins", sans-serif;
 }
 
-/* Navigation Links */
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ffe0b2;
-}
-
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #ff7043;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 10px 20px;
-    gap: 10px;
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.2rem;
   }
 }

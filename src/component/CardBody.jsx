@@ -17,7 +17,7 @@ const CardBody = () => {
   // 🧠 Fetch data from JSONPlaceholder API
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get('${import.meta.env.VITE_BASE_URL}/posts')
       .then((res) => {
         // Take only the first 6 posts
         setData(res.data.slice(0, 6));
@@ -42,3 +42,4 @@ const CardBody = () => {
 };
 
 export default CardBody;
+ 

@@ -8,6 +8,23 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+
+
+.login-link{
+  display: flex;
+  color: white;
+  text-decoration: none;
+  margin-left: 65px ;
+  transition: all 0.5s;
+
+
+}
+
+.login-link :hover{
+  color: coral;
+}
+
+
 .logo {
   color: white;
   font-size: 1.5rem;
